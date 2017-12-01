@@ -36,8 +36,8 @@ def can_get_size_of_the_database
 end
 
 def can_find_the_first_item_from_the_database_using_id
-  Movie.all[id]
-        #Movie.where("id = ?", id).first
+  Movie.where("id = ?", 1).first
+        #
         #  `id` is not available from within an example (e.g. an `it` block) or from constructs that run in the scope of an example (e.g. `before`, `let`, etc). It
        #is only available on an example group (e.g. a `describe` or `context` block).
 end
